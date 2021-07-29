@@ -1,0 +1,13 @@
+<div class="todo-list-wrapper">
+  <h2>Todo List</h2>
+  <div class="todo-list" *ngIf="todoItems.length > 0; else noTodos">
+    <div class="todo-item" *ngFor="let todo of todoItems">
+      <app-todo-item [todo]="todo"
+      (changeTodoStatus)="changeStatus($event)"
+      (deleteTodoItem)="deleteTodo($event)"></app-todo-item>
+    </div>
+  </div>
+  <ng-template #noTodos>
+    <p class="error">No todos found!</p>
+  </ng-template>
+</div>

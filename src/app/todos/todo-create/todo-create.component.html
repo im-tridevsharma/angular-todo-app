@@ -1,0 +1,13 @@
+
+<div class="todo-create-wrapper">
+  <h2>Add New Todo</h2>
+  <form (ngSubmit)="addNewTodo()">
+    <div class="input">
+      <label for="todo-title">Todo title</label>
+      <input type="text" name="todo-title" id="todo-title" [(ngModel)]="todoTitle">
+    </div>
+    <div class="button">
+      <button type="submit">Add</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,20 @@
+.app {
+  height: auto;
+  width: 100%;
+}
+
+.app-wrapper {
+  max-width: 900px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-wrapper {
+  max-width: 100%;
+  width: 100%;
+  padding: 5px 0px;
+  background: azure;
+  box-shadow: 0px 1px 2px 0px rgb(228, 228, 228);
+}

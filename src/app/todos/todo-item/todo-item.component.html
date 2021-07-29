@@ -1,0 +1,11 @@
+
+<div class="todo-item-wrapper">
+  <div class="todo">
+    <input type="checkbox" [checked]="!todo.isActive" (click)="changeStatus()">
+    <h4 [class]="!todo.isActive ? 'strike' : ''">{{ todo.title }}</h4>
+    <small>{{ todo.createdAt }}</small>
+    <div class="remove" title="Remove Todo" (click)="deleteTodo()">
+      <i class="fas fa-times"></i>
+    </div>
+  </div>
+</div>
